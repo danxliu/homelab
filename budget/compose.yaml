@@ -12,6 +12,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
+    networks:
+      - proxy-nw
     restart: unless-stopped
 
 networks:
